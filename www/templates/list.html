@@ -1,0 +1,15 @@
+<ion-view view-title='reddit'>
+
+<ion-content  ng-controller='redditCtrl'>
+	<div class="list">
+		<a href="#/details/{{children.id}}" class="item item-thumbnail-left" ng-repeat='child in children'>
+			<img src="{{child.picture}}" alt="">
+				<h2>{{child.name}}</h2>
+				<h2>{{child.id}}</h2>
+				<p>{{child.details}}</p>
+			</img>
+		</a>
+	</div>
+</ion-content>
+
+</ion-view>
